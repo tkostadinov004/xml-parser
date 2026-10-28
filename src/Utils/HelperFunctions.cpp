@@ -1,4 +1,4 @@
-#include "HelperFunctions.h"
+#include "Utils/HelperFunctions.h"
 
 int32_t HelperFunctions::parseInteger(const char* str)
 {

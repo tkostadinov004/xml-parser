@@ -1,5 +1,5 @@
-#include "XPathDescendantSelector.h"
-#include "..\..\..\XML\Models\XMLElementNode.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathDescendantSelector.h"
+#include "Core/XML/Models/XMLElementNode.h"
 
 XPathSelector* XPathDescendantSelector::clone() const
 {

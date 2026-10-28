@@ -1,4 +1,4 @@
-#include "XMLTextNodeBuilder.h"
+#include "Core/XML/Services/Deserializer/CoreFunctionality/Builders/XMLTextNodeBuilder.h"
 
 XMLTextNodeBuilder::XMLTextNodeBuilder(DataReader& reader) : XMLBuilder(reader)
 {

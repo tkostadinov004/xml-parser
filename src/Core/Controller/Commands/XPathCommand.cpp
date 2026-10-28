@@ -1,4 +1,4 @@
-#include "XPathCommand.h"
+#include "Core/Controller/Commands/XPathCommand.h"
 
 XPathCommand::XPathCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "xpath", arguments, 1)
 {

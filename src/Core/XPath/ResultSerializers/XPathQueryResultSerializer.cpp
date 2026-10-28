@@ -1,4 +1,4 @@
-#include "XPathQueryResultSerializer.h"
+#include "Core/XPath/ResultSerializers/XPathQueryResultSerializer.h"
 
 MyString XPathQueryResultSerializer::serializeResult(const MyVector<const XMLNode*>& result) const
 {

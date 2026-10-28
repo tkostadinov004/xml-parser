@@ -1,5 +1,5 @@
-#include "XMLElementNodeWithID.h"
-#include "XMLTextNode.h"
+#include "Core/XML/Models/XMLElementNodeWithID.h"
+#include "Core/XML/Models/XMLTextNode.h"
 
 XMLElementNodeWithID::XMLElementNodeWithID(const MyString& tagName)
 {

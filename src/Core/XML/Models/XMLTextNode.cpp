@@ -1,5 +1,5 @@
-#include "XMLTextNode.h"
 #include <iomanip>
+#include "Core/XML/Models/XMLTextNode.h"
 
 MySharedPtr<XMLNode> XMLTextNode::clone() const
 {

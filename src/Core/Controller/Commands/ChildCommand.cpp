@@ -1,5 +1,5 @@
-#include "ChildCommand.h"
-#include "..\..\..\Utils\HelperFunctions.h"
+#include "Core/Controller/Commands/ChildCommand.h"
+#include "Utils/HelperFunctions.h"
 
 ChildCommand::ChildCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "child", arguments, 2)
 {

@@ -1,6 +1,6 @@
-#include "XMLDocumentWithID.h"
-#include "..\..\..\Utils\MyStack\MyStack.hpp"
-#include "../Models/XMLTextNode.h"
+#include "Core/XML/Documents/XMLDocumentWithID.h"
+#include "Utils/MyStack/MyStack.hpp"
+#include "Core/XML/Models/XMLTextNode.h"
 
 void XMLDocumentWithID::setIdToElement(XMLElementNodeWithID* element)
 {

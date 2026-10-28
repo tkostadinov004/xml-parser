@@ -1,4 +1,4 @@
-#include "SaveAsCommand.h"
+#include "Core/Controller/Commands/SaveAsCommand.h"
 
 SaveAsCommand::SaveAsCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "saveas", arguments, 1)
 {

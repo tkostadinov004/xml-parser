@@ -1,4 +1,4 @@
-#include "PrintCommand.h"
+#include "Core/Controller/Commands/PrintCommand.h"
 
 PrintCommand::PrintCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "print", arguments, 0)
 {

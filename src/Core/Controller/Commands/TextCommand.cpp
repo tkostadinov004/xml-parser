@@ -1,4 +1,4 @@
-#include "TextCommand.h"
+#include "Core/Controller/Commands/TextCommand.h"
 
 TextCommand::TextCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "text", arguments, 1)
 {

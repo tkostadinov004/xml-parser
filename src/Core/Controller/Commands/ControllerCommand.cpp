@@ -1,4 +1,4 @@
-#include "ControllerCommand.h"
+#include "Core/Controller/Commands/ControllerCommand.h"
 
 ControllerCommand::ControllerCommand(XMLController& controller, const MyString& name, const MyVector<MyString>& arguments, size_t argumentsNeeded) : _controller(controller), _name(name)
 {

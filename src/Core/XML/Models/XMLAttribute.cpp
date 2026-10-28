@@ -1,6 +1,6 @@
-#include "XMLAttribute.h"
-#include "XMLElementNode.h"
-#include "..\..\..\Utils\Messages\ErrorMessageBuilder.h"
+#include "Core/XML/Models/XMLAttribute.h"
+#include "Core/XML/Models/XMLElementNode.h"
+#include "Utils/Messages/ErrorMessageBuilder.h"
 
 XMLAttribute::XMLAttribute(const MyString& key, const MyString& value)
 {

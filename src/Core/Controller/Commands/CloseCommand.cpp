@@ -1,4 +1,4 @@
-#include "CloseCommand.h"
+#include "Core/Controller/Commands/CloseCommand.h"
 
 CloseCommand::CloseCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "close", arguments, 0)
 {

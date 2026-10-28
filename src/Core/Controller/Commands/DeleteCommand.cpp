@@ -1,4 +1,4 @@
-#include "DeleteCommand.h"
+#include "Core/Controller/Commands/DeleteCommand.h"
 
 DeleteCommand::DeleteCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "delete", arguments, 2)
 {

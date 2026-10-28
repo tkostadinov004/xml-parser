@@ -1,4 +1,4 @@
-#include "StringIterator.h"
+#include "Utils/Iterators/StringIterator.h"
 
 StringIterator::StringIterator(char* ptr, size_t index) : _ptr(ptr), _index(index) {}
 

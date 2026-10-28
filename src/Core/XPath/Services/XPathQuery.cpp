@@ -1,8 +1,8 @@
-#include "XPathQuery.h"
-#include "..\..\XML\Models\XMLTextNode.h"
-#include "..\QueryParser\XPathQueryDeserializer.h"
-#include "XPathSelectorFactory.h"
-#include "..\ResultSerializers\XPathQueryResultSerializer.h"
+#include "Core/XPath/Services/XPathQuery.h"
+#include "Core/XML/Models/XMLTextNode.h"
+#include "Core/XPath/QueryParser\XPathQueryDeserializer.h"
+#include "Core/XPath/Services/XPathSelectorFactory.h"
+#include "Core/XPath/ResultSerializers\XPathQueryResultSerializer.h"
 
 MyVector<const XMLNode*> XPathQuery::evaluate(const MySharedPtr<XMLElementNode>& root, const MyString& queryString)
 {

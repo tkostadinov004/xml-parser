@@ -1,4 +1,4 @@
-#include "NewChildCommand.h"
+#include "Core/Controller/Commands/NewChildCommand.h"
 
 NewChildCommand::NewChildCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "newchild", arguments, 2)
 {

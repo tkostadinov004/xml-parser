@@ -1,9 +1,9 @@
 #include <sstream>
 #include "XMLRepository.h"
-#include "..\Services/Deserializer\XMLDeserializer.h"
-#include "..\Services\XMLSerializer.h"
-#include "..\..\..\Utils\MyStack\MyStack.hpp"
-#include "..\..\XPath\Services\XPathQuery.h"
+#include "Core/XML/Services/Deserializer/XMLDeserializer.h"
+#include "Core/XML/Services/XMLSerializer.h"
+#include "Utils/MyStack/MyStack.hpp"
+#include "Core/XPath/Services/XPathQuery.h"
 
 void XMLRepository::open(const MyString& path)
 {

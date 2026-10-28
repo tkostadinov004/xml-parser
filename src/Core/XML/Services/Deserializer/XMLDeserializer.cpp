@@ -1,9 +1,9 @@
-#include "XmlDeserializer.h"
-#include "../../Models/XMLTextNode.h"
-#include "../../../../Utils/Exceptions/FileError.h"
-#include "..\..\..\../Utils\MyStack\MyStack.hpp"
-#include "CoreFunctionality\XMLBuildingContext.h"
-#include "..\..\..\..\Utils\Messages\ErrorMessageBuilder.h"
+#include "Core/XML/Services/Deserializer/XmlDeserializer.h"
+#include "Core/XML/Models/XMLTextNode.h"
+#include "Utils/Exceptions/FileError.h"
+#include "Utils/MyStack/MyStack.hpp"
+#include "Core/XML/Services/Deserializer/CoreFunctionality\XMLBuildingContext.h"
+#include "Utils/Messages/ErrorMessageBuilder.h"
 
 static bool isWhitespace(char c)
 {

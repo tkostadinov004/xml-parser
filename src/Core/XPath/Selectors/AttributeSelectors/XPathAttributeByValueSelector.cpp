@@ -1,5 +1,5 @@
-#include "XPathAttributeByValueSelector.h"
-#include "..\..\..\XML\Models\XMLElementNode.h"
+#include "Core/XPath/Selectors/AttributeSelectors/XPathAttributeByValueSelector.h"
+#include "Core/XML/Models/XMLElementNode.h"
 
 XPathSelector* XPathAttributeByValueSelector::clone() const
 {

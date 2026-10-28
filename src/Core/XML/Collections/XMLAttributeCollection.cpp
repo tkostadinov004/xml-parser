@@ -1,4 +1,4 @@
-#include "XMLAttributeCollection.h"
+#include "Core/XML/Collections/XMLAttributeCollection.h"
 
 XMLAttributeCollection::XMLAttributeCollection(size_t count) : MyVector(count)
 {

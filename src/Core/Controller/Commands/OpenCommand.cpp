@@ -1,4 +1,4 @@
-#include "OpenCommand.h"
+#include "Core/Controller/Commands/OpenCommand.h"
 
 OpenCommand::OpenCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "open", arguments, 1)
 {

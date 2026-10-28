@@ -1,4 +1,4 @@
-#include "XPathMixinSelector.h"
+#include "Core/XPath/Selectors/XPathMixinSelector.h"
 
 XPathMixinSelector::XPathMixinSelector(const MySharedPtr<XPathAxisSelector>& axisSelector, const MySharedPtr<XPathAttributeSelector>& attributeSelector) : _axisSelector(axisSelector), _attributeSelector(attributeSelector)
 {

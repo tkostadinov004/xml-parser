@@ -1,4 +1,4 @@
-#include "HelpCommand.h"
+#include "Core/Controller/Commands/HelpCommand.h"
 
 HelpCommand::HelpCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "help", arguments, 0)
 {

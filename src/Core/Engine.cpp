@@ -1,7 +1,7 @@
-#include "Engine.h"
-#include "..\Utils\HelperFunctions.h"
-#include "Controller\Commands\ControllerCommand.h"
-#include "Controller\ControllerCommandFactory.h"
+#include "Core/Engine.h"
+#include "Utils/HelperFunctions.h"
+#include "Core/Controller/Commands/ControllerCommand.h"
+#include "Core/Controller/ControllerCommandFactory.h"
 
 static MyVector<MyString> splitCommandLine(const MyString& str)
 {

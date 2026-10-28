@@ -1,4 +1,4 @@
-#include "XMLNode.h"
+#include "Core/XML/Models/XMLNode.h"
 
 MyWeakPtr<XMLNode>& XMLNode::parent()
 {

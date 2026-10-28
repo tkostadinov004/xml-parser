@@ -1,5 +1,5 @@
-#include "XPathAttributeByExistenceSelector.h"
-#include "..\..\..\XML\Models\XMLElementNode.h"
+#include "Core/XPath/Selectors/AttributeSelectors/XPathAttributeByExistenceSelector.h"
+#include "Core/XML/Models/XMLElementNode.h"
 
 XPathSelector* XPathAttributeByExistenceSelector::clone() const
 {

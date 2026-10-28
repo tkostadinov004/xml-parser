@@ -1,4 +1,4 @@
-#include "XPathQueryReader.h"
+#include "Core/XPath/QueryParser/XPathQueryReader.h"
 
 XPathQueryReader::XPathQueryReader(const MyString& queryString) : _queryString(queryString) {}
 

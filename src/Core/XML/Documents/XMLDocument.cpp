@@ -1,4 +1,4 @@
-#include "XMLDocument.h"
+#include "Core/XML/Documents/XMLDocument.h"
 
 XMLDocument::XMLDocument(const MySharedPtr<XMLElementNode>& root)
 {

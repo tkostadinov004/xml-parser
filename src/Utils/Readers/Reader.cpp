@@ -1,4 +1,4 @@
-#include "Reader.h"
+#include "Utils/Readers/Reader.h"
 
 MyVector<MyString> Reader::splitAndIgnore(const MyString& str, char delim, bool removeEmptyEntries) const
 {

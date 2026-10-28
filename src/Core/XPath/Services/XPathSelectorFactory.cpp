@@ -1,12 +1,12 @@
-#include "XPathSelectorFactory.h"
-#include "../Selectors/XPathMixinSelector.h"
-#include "../Selectors/AxisSelectors/XPathAncestorSelector.h"
-#include "../Selectors/AxisSelectors/XPathAxisSelector.h"
-#include "../Selectors/AxisSelectors/XPathChildSelector.h"
-#include "../Selectors/AxisSelectors/XPathDescendantSelector.h"
-#include "../Selectors/AxisSelectors/XPathParentSelector.h"
-#include "../Selectors/AttributeSelectors/XPathAttributeByExistenceSelector.h"
-#include "../Selectors/AttributeSelectors/XPathAttributeByValueSelector.h"
+#include "Core/XPath/Services/XPathSelectorFactory.h"
+#include "Core/XPath/Selectors/XPathMixinSelector.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathAncestorSelector.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathAxisSelector.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathChildSelector.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathDescendantSelector.h"
+#include "Core/XPath/Selectors/AxisSelectors/XPathParentSelector.h"
+#include "Core/XPath/Selectors/AttributeSelectors/XPathAttributeByExistenceSelector.h"
+#include "Core/XPath/Selectors/AttributeSelectors/XPathAttributeByValueSelector.h"
 
 XPathSelectorFactory::XPathSelectorFactory(const XPathQueryComponent& component) : _component(component)
 {

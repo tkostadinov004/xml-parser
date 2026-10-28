@@ -1,4 +1,4 @@
-#include "SetCommand.h"
+#include "Core/Controller/Commands/SetCommand.h"
 
 SetCommand::SetCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "set", arguments, 3)
 {

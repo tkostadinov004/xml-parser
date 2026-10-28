@@ -1,4 +1,4 @@
-#include "SelectCommand.h"
+#include "Core/Controller/Commands/SelectCommand.h"
 
 SelectCommand::SelectCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller, "select", arguments, 2)
 {

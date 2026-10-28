@@ -1,4 +1,4 @@
-#include "DataReader.h"
+#include "Core/XML/Services/Deserializer/CoreFunctionality/DataReader.h"
 static bool isWhitespace(char c)
 {
 	return c == ' ' || c == '\n' || c == '\t' || c == '\f' || c == '\v' || c == '\r';

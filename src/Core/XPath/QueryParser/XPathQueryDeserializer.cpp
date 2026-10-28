@@ -1,5 +1,5 @@
-#include "XPathQueryDeserializer.h"
-#include "..\..\..\Utils\HelperFunctions.h"
+#include "Core/XPath/QueryParser/XPathQueryDeserializer.h"
+#include "Utils/HelperFunctions.h"
 
 XPathQueryComponent XPathQueryDeserializer::parseComponent(const MyString& component) const
 {

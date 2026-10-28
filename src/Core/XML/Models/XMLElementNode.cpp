@@ -1,7 +1,7 @@
 #include <iomanip>
-#include "XMLElementNode.h"
-#include "XMLTextNode.h"
-#include "..\..\..\Utils\MyStack\MyStack.hpp"
+#include "Core/XML/Models/XMLElementNode.h"
+#include "Core/XML/Models/XMLTextNode.h"
+#include "Utils/MyStack/MyStack.hpp"
 
 std::ostream& XMLElementNode::print(std::ostream& os, int indent) const
 {

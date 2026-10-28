@@ -1,4 +1,4 @@
-#include "XMLNamespace.h"
+#include "Core/XML/Models/XMLNamespace.h"
 
 XMLNamespace::XMLNamespace(const MyString& name, const MyString& value)
 {

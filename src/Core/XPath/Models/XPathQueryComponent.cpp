@@ -1,4 +1,4 @@
-#include "XPathQueryComponent.h"
+#include "Core/XPath/Models/XPathQueryComponent.h"
 
 const MyString& XPathQueryComponent::getAxis() const
 {

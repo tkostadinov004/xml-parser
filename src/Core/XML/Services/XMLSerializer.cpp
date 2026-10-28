@@ -1,7 +1,7 @@
-#include "XMLSerializer.h"
+#include "Core/XML/Services/XMLSerializer.h"
 #include <fstream>
-#include "..\..\..\Utils\Exceptions\FileError.h"
-#include "..\..\..\Utils\Messages\ErrorMessageBuilder.h"
+#include "Utils/Exceptions/FileError.h"
+#include "Utils/Messages/ErrorMessageBuilder.h"
 
 XMLSerializer::XMLSerializer(const MyString& path)
 {

@@ -1,4 +1,4 @@
-#include "ChildrenCommand.h"
+#include "Core/Controller/Commands/ChildrenCommand.h"
 
 ChildrenCommand::ChildrenCommand(XMLController& controller, const MyVector<MyString>& arguments) : ControllerCommand(controller,"children", arguments, 1)
 {

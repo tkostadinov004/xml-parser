@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-#include "MyString.h"
+#include "Utils/MyString/MyString.h"
 #pragma warning (disable: 4996)
 
 namespace HelperFunctions

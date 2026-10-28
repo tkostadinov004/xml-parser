@@ -1,4 +1,4 @@
-#include "XMLException.h"
+#include "Core/XML/Exceptions/XMLException.h"
 
 XMLException::XMLException(const char* message) : std::logic_error(message)
 {
