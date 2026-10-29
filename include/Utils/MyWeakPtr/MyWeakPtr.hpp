@@ -69,7 +69,7 @@ void MyWeakPtr<T>::free()
 template<typename T>
 MyWeakPtr<T>::MyWeakPtr(T* ptr) : _ptr(ptr)
 {
-	if (_ptr)
+	//if (_ptr)
 	{
 		_refCounter = new Counter();
 		_refCounter->addWeakPointer();

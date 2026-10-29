@@ -85,7 +85,7 @@ MySharedPtr<T>::MySharedPtr(T* ptr, Counter* counter)
 {
 	_ptr = ptr;
 	_refCounter = counter;
-	if (_ptr && _refCounter)
+	if (_refCounter)
 	{
 		_refCounter->addSharedPointer();
 	}
@@ -94,7 +94,7 @@ MySharedPtr<T>::MySharedPtr(T* ptr, Counter* counter)
 template<typename T>
 MySharedPtr<T>::MySharedPtr(T* ptr) : _ptr(ptr)
 {
-	if (_ptr)
+	//if (_ptr)
 	{
 		_refCounter = new Counter();
 		_refCounter->addSharedPointer();

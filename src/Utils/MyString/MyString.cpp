@@ -76,6 +76,7 @@ namespace HelperFunctions
 			}
 		}
 		delete[] prefixes;
+		prefixes = nullptr;
 		return matchIndex;
 	}
 
@@ -113,6 +114,7 @@ void MyString::resize(size_t newCapacity)
 	}
 	_capacity = newCapacity;
 	delete[] temp;
+	temp = nullptr;
 }
 
 void MyString::copyFrom(const MyString& other)
@@ -679,6 +681,7 @@ std::istream& getline(std::istream& is, MyString& str, size_t count, char delim)
 	str.clear();
 	str.append(buffer);
 	delete[] buffer;
+	buffer = nullptr;
 	return is;
 }
 

@@ -1,3 +1,4 @@
+#include <exception>
 #include "Core/XML/Services/Deserializer/CoreFunctionality/XMLBuildingContext.h"
 
 XMLDocument XMLBuildingContext::finish() const
@@ -5,7 +6,7 @@ XMLDocument XMLBuildingContext::finish() const
 	if (!_tags.empty())
 	{
 		MyString unclosedTags = join(_tags.convertTo<MyString>([](const MyString& tag) {return tag;}), ", ");
-		throw std::exception(MyString("Opening tags for: " + unclosedTags + " are not defined!").c_str());
+		throw std::logic_error(MyString("Opening tags for: " + unclosedTags + " are not defined!").c_str());
 	}
     return XMLDocument(_resultRoot);
 }

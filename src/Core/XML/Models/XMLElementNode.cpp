@@ -1,4 +1,5 @@
 #include <iomanip>
+#include <exception>
 #include "Core/XML/Models/XMLElementNode.h"
 #include "Core/XML/Models/XMLTextNode.h"
 #include "Utils/MyStack/MyStack.hpp"
@@ -160,7 +161,7 @@ void XMLElementNode::assignNamespace(const MyString& namespaceName)
 	MySharedPtr<XMLNamespace> obtained = getNamespaceInScopeByName(namespaceName);
 	if (!obtained)
 	{
-		throw std::exception(MyString("Namespace \"" + namespaceName + "\" is not defined!").c_str());
+		throw std::logic_error(MyString("Namespace \"" + namespaceName + "\" is not defined!").c_str());
 	}
 	this->_namespace = obtained;
 }

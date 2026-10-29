@@ -1,5 +1,5 @@
 #include <sstream>
-#include "XMLRepository.h"
+#include "Core/XML/Repositories/XMLRepository.h"
 #include "Core/XML/Services/Deserializer/XMLDeserializer.h"
 #include "Core/XML/Services/XMLSerializer.h"
 #include "Utils/MyStack/MyStack.hpp"

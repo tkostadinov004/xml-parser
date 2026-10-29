@@ -1,14 +1,10 @@
-#include "Core/XML/Services/Deserializer/XmlDeserializer.h"
+#include "Core/XML/Services/Deserializer/XMLDeserializer.h"
 #include "Core/XML/Models/XMLTextNode.h"
 #include "Utils/Exceptions/FileError.h"
 #include "Utils/MyStack/MyStack.hpp"
-#include "Core/XML/Services/Deserializer/CoreFunctionality\XMLBuildingContext.h"
+#include "Core/XML/Services/Deserializer/CoreFunctionality/XMLBuildingContext.h"
 #include "Utils/Messages/ErrorMessageBuilder.h"
 
-static bool isWhitespace(char c)
-{
-	return c == ' ' || c == '\n' || c == '\t' || c == '\f' || c == '\v' || c == '\r';
-}
 static bool isTagOpener(char c)
 {
 	return c == '<';
@@ -89,7 +85,7 @@ XMLDocument XMLDeserializer::deserialize()
 			context.createTag();
 			c = ifs.get();
 
-			if (isWhitespace(c))
+			if (std::isspace(c))
 			{
 				state = State::CurrentlyReadingAttributes;
 				continue;
@@ -109,7 +105,7 @@ XMLDocument XMLDeserializer::deserialize()
 
 			context.flushElementNode();
 		}
-		else if ((state == State::EndOfTag || state == State::Initial) && !isWhitespace(c) && !isTagOpener(c) && !isTagTerminator(c))
+		else if ((state == State::EndOfTag || state == State::Initial) && !std::isspace(c) && !isTagOpener(c) && !isTagTerminator(c))
 		{
 			state = State::CurrentlyReadingPlainText;
 			ifs.seekg(-1, std::ios::cur);
@@ -120,7 +116,7 @@ XMLDocument XMLDeserializer::deserialize()
 			context.flushTextNode();
 			state = State::EndOfPlainText;
 		}
-		else if (state == State::StartOfClosingTag && !isTagOpener(c) && !isWhitespace(c))
+		else if (state == State::StartOfClosingTag && !isTagOpener(c) && !std::isspace(c))
 		{
 			context.closeTag();
 			c = ifs.get();

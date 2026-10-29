@@ -1,5 +1,5 @@
 #pragma once
-#include "../../../Utils/MyString\MyString.h"
+#include "../../../Utils/MyString/MyString.h"
 struct AttributeFilter
 {
 	MyString _key;

@@ -71,7 +71,7 @@ void XMLAttribute::assignNamespace(const MyString& namespaceName)
     MySharedPtr<XMLNamespace> obtained = owner->getNamespaceInScopeByName(namespaceName);
     if (!obtained)
     {
-        throw std::exception(MyString("Namespace \"" + namespaceName + "\" is not defined!").c_str());
+        throw std::logic_error(MyString("Namespace \"" + namespaceName + "\" is not defined!").c_str());
     }
     this->_namespace = obtained;
 }

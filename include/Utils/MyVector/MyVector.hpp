@@ -135,6 +135,7 @@ template<typename T>
 void MyVector<T>::free()
 {
 	delete[] _data;
+	_data = nullptr;
 	_size = 0;
 }
 
@@ -152,6 +153,7 @@ void MyVector<T>::resize(size_t capacity)
 		_data[i] = temp[i];
 	}
 	delete[] temp;
+	temp = nullptr;
 	_capacity = capacity;
 
 }
