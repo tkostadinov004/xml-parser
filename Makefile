@@ -9,7 +9,7 @@ OBJS := $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
 EXEC_FILE := xml.out
 
 $(EXEC_FILE): $(OBJS)
-	@$(CXX) -o $@ $^
+	@$(CXX) -static -o $@ $^
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	mkdir -p $(dir $@)
